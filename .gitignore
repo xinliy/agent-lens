@@ -1,5 +1,6 @@
-# Local planning notes
-plan-doc/
+# Local planning drafts
+plan-doc/*
+!plan-doc/*.md
 
 # Dependencies
 node_modules/
@@ -8,6 +9,11 @@ node_modules/
 dist/
 build/
 coverage/
+
+# Agent Lens local output
+.agent-lens/
+AGENT_LENS_REPORT.md
+AGENT_LENS_INDEX.md
 
 # Logs
 *.log
@@ -25,4 +31,3 @@ pnpm-debug.log*
 Thumbs.db
 .idea/
 .vscode/
-

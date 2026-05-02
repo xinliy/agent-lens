@@ -1,0 +1,52 @@
+{
+  "name": "agent-lens",
+  "version": "0.1.0",
+  "description": "Local-first provenance reports for AI-authored git diffs.",
+  "type": "module",
+  "license": "MIT",
+  "author": "xinliy",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xinliy/agent-lens.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xinliy/agent-lens/issues"
+  },
+  "homepage": "https://github.com/xinliy/agent-lens#readme",
+  "keywords": [
+    "ai-agents",
+    "codex",
+    "claude-code",
+    "developer-tools",
+    "git",
+    "provenance",
+    "code-review"
+  ],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "bin": {
+    "al": "./dist/al.js",
+    "agent-lens": "./dist/cli.js",
+    "codex-lens": "./dist/codex-lens.js"
+  },
+  "scripts": {
+    "agent-lens": "tsx src/cli.ts",
+    "build": "tsc",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@10.10.0",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.2"
+  }
+}
